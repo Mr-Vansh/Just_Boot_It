@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Boot One</title>
+  </head>
+  <body>
+    <!------------ NAVBAR --------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand px-3 border border-warning" href="#">Just Boot It</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#services">Web Development</a></li>
+                <li><a class="dropdown-item" href="#services">App Development</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#services">SEO</a>
+                </li>
+                <li class="nav-item"></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-warning" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!----------- CAROUSEL--------------->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="images/1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="images/2.jpg " class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!----------- TagLine ---------------->
+    <div class="container-fluid" id="about-us">
+      <div class="row">
+        <div class="col-12">
+          <!-- content-heading -->
+          <h3 class="d-6 text-center mt-5 mb-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br />Autem, repellat! Veritatis, facere.
+          </h3>
+        </div>
+      </div>
+      <!-- content-information -->
+      <div class="row justify-content-evenly mt-4">
+        <div class="col-md-3 text-center">
+          <h1><i class="bi bi-file-code-fill text-primary"></i></h1>
+          <h5>Built for developers</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing. Laboriosam
+            reprehenderit iste aspernatur et repellendus.
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h1><i class="bi bi-easel-fill text-danger"></i></h1>
+          <h5>Built for developers</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing. Laboriosam
+            reprehenderit iste aspernatur et repellendus.
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h1><i class="bi bi-calendar-range-fill text-success"></i></h1>
+          <h5>Built for developers</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing. Laboriosam
+            reprehenderit iste aspernatur et repellendus.
+          </p>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!------------- GROWTH -------------->
+    <div class="container-fluid mt-3 mb-5" id="services">
+      <div class="row justify-content-evenly">
+        <div class="col-md-5 pt-4">
+          <img src="images/4.jfif" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-5 pt-1">
+          <h5 class="mt-3">Website Development</h5>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <h5 class="mt-3">App Development</h5>
+          <div class="progress">
+            <div
+              class="progress-bar bg-info"
+              role="progressbar"
+              style="width: 75%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <h5 class="mt-3">Software Development</h5>
+          <div class="progress">
+            <div
+              class="progress-bar bg-warning"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <h5 class="mt-3">SEO</h5>
+          <div class="progress">
+            <div
+              class="progress-bar bg-danger"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <h5 class="mt-3">Marketing</h5>
+          <div class="progress">
+            <div
+              class="progress-bar bg-primary"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="container-fluid mt-3" id="contact-us">
+    <div class="row justify-content-evenly" style="background-color: #f1f1f1;">
+      <div class="col-md-5">
+        <h2 class="pt-4">Contact</h2>
+        <form>
+          <div class=" pt-3 mb-3">
+            <label for="exampleFullName1" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="exampleFullName1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-5">
+        <h2 class="pt-4">Address</h2>
+        <p class="pt-3">1180 Kimberly Way, WILLSTON PARK <br>
+        New York - 11576<br>
+        <i class="bi bi-phone"></i> : 917-772-5081</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5822.018233943791!2d-93.1974440842902!3d43.14633784272608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f10763a477fccb%3A0x8e1525b1764c4986!2sHart%20Brothers%20South!5e0!3m2!1sen!2sin!4v1642514271008!5m2!1sen!2sin" style='width: 100%;' height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+
+    <!-- FAQ SECTION -->
+    <div class="row justify-content-evenly pt-5 pd-3" id="faq">
+      <div class="col-md-10">
+        <h2 class="text-center pb-4">FAQ</h2>
+        <!-- ACCORDION -->
+        <div class="accordion accordion-flush border mb-3" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application. Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!----------- FOOTER ---------->
+    <div class="row justify-content-evenly bg-dark text-white mt-3 pb-3">
+      <div class="col-md-3 pt-5">
+        <h4 class="text-warning pb-2">Just Boot It</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit a atque at sed obcaecati tempora nisi cumque provident quam sunt.</p>
+      </div>
+      <div class="col-md-3 pt-3">
+        <h4 class="text-warning pt-4 pb-2">Important Links</h4>
+        <p>
+          <a href="#" class="link-light text-decoration-none">Home</a><br>
+          <a href="#" class="link-light text-decoration-none">About Us</a><br>
+          <a href="#" class="link-light text-decoration-none">Clients</a><br>
+          <a href="#" class="link-light text-decoration-none">Services</a><br>
+          <a href="#contact-us" class="link-light text-decoration-none">Contact Us</a><br>
+        </p>
+      </div>
+      <div class="col-md-3 pt-3">
+        <h4 class="text-warning pt-4 pb-2">Contact Us</h4>
+        <p>1180 Kimberly Way, WILLSTON PARK <br>
+          New York - 11576<br>
+          <i class="bi bi-phone"></i> : 917-772-5081</p>
+      </div>
+    </div>
+
+    <!------------ CopyRight ----------->
+    <div class="row text-white text-center pt-3 copyright" style="background-color: #1d1e1e;">
+      <div class="col-md-12">
+        <p>Copyright 1999-2021 by Just Boot It. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

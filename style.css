@@ -1,0 +1,27 @@
+.navbar-dark .navbar-brand {
+    color: #ffcd47 !important;
+    font-weight: 700;
+    font-size: 27px;
+}
+.w-100 {
+    width: 100%!important;
+    height: 500px;
+}
+.img-fluid {
+    width: 530px;
+    height: 300px;
+}
+
+
+/******** MOBILE DEVICE *******/
+@media only screen and (max-width: 600px){
+    .navbar-brand {
+        border: none !important;
+    }
+    .w-100 {
+        height: 330px;
+    }
+    .copyright p{
+        font-size: 13px;
+    }
+}
